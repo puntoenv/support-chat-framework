@@ -3,11 +3,23 @@ import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    {
+      title: "Binvendo a React Router!!!!",
+    },
+    {
+      name: "description",
+      content: "Bienvenido a React Router!!!!",
+    },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div>
+      <h1 className="text-4xl font-thin">Bienvenido a React Router</h1>
+      <p className="text-lg">
+        Este es el proyecto de React Router creado con el comando de Vite.
+      </p>
+    </div>
+  );
 }
